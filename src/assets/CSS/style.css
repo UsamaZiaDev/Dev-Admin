@@ -1,0 +1,122 @@
+:root {
+    --primary: #4E73DF;
+    --dark-primary: #2E59D9;
+    --regulr: #5A5C69;
+    --danger: #E74A3B;
+    --green: #1CC88A;
+    --yellow:#F6C23E;
+    --light-bg:#F6F7FA;
+    --pure:#fff;
+    --bg_gray: #D1D3E2
+}
+.bg_primary{
+    background-color: var(--dark-primary);
+}
+.bg_success{
+    background-color: var(--green);
+}
+body{
+    background-color: var(--light-bg);
+    color: var(--regulr);
+}
+.main-body-dashboard{
+    min-height: 100vh;
+    height: 100%;
+}
+.sidebar-main{
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    transition: .3s;
+}
+.sidebar-link{
+    border-bottom:1px solid rgba(255, 255, 255, 0.254) !important
+}
+.main-body-con{
+    width: 100%;
+    background: var(--light-bg);
+}
+.pointer{
+    cursor: pointer !important;
+}
+
+.icon-wrapper{
+    color: var(--bg_gray);
+}
+.icon-wrapper{
+    position: relative;
+}
+.icon-wrapper:after{
+    content: attr(current_counter);
+    background-color: var(--danger);
+    position: absolute;
+    font-size: 10px;
+    right: 0;
+    z-index: 11;
+    line-height: 12px;
+    border-radius: 3px;
+    padding:1px 5px 2px ;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color:var(--pure);
+    top:0
+}
+.bell:after{
+    right:13px
+}
+.envelope:after{
+    right: 17px;
+}
+.main_link_sidebar:nth-child(3) #subMenu,
+.main_link_sidebar:nth-child(4) #subMenu ,
+.main_link_sidebar:nth-child(5) #subMenu {
+    display: none !important;
+}
+
+.main_link_sidebar:nth-child(3):hover #subMenu,
+.main_link_sidebar:nth-child(4):hover #subMenu ,
+.main_link_sidebar:nth-child(5):hover #subMenu {
+    display: block !important;
+}
+.left-arrow-wrapper{
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+}
+.rocket-card-wrapper{
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.165);
+    border-radius: 12px;
+
+}
+.rocket-card-wrapper img{
+    width: 75px;
+}
+.rocket-card-wrapper p{
+    padding-top: 15px;
+    color: rgb(188, 188, 188);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.earning_card{
+    border: 1px solid #E3E6F0;
+    border-left:5px solid var(--primary); 
+    border-radius: 6px;
+    padding:30px  15px;
+    background-color: var(--pure);
+}
+
+.earning_card h5{
+    font-size: 12px;
+}
+.earning_card h3{
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.earning-icon-wrapper {
+    color:#DDDFEB
+}
